@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": false,
+    "outDir": "./dist",
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true
+    // "noImplicitAny": true,
+    // "strictNullChecks": true,
+    // "strictFunctionTypes": true,
+    // "strictBindCallApply": true,
+    // "strictPropertyInitialization": true,
+    // "noImplicitThis": true,
+    // "alwaysStrict": true,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
