@@ -1,11 +1,12 @@
-import request, { Response } from 'request'
+import axios from 'axios'
 
-const url =
-  'http://api.dataide.eastmoney.com/data/gethglist?pageindex=1&pagesize=830&orderby=dim_scode'
+const opts = {
+  pageindex: 1,
+  pagesize: 20,
+  orderby: 'dim_scode',
+}
+const url = 'http://api.dataide.eastmoney.com/data/gethglist'
 
-request.get(
-  'https://baidu.com',
-  (_err: any, _resp: Response, body: any): any => {
-    console.log(body)
-  }
-)
+axios.get(url, { params: opts }).then(resp => {
+  console.log(resp.data.data)
+})
