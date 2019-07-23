@@ -1,13 +1,14 @@
 {
   "name": "ts-dfcf",
   "version": "0.1.0",
-  "main": "dist/index.js",
+  "main": "build/dist/index.js",
   "scripts": {
     "dev": "ts-node src/index.ts",
     "watch": "tsc --watch",
-    "start": "node dist/index.js",
-    "clean": "rm -rf dist",
-    "build": "tsc -p tsconfig.json",
+    "start:dev": "node --inspect-brk build/dev/index.js",
+    "start:prod": "node build/dist/index.js",
+    "clean": "rm -rf build",
+    "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\""
   },

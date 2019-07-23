@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "sourceMap": false,
-    "outDir": "./dist",
+    "sourceMap": true,
+    "outDir": "./build/dev",
 
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -20,5 +20,5 @@
     // "alwaysStrict": true,
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "build"]
 }
