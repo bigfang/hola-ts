@@ -2,16 +2,16 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
 
 @Entity()
-export class User {
+export class Company {
   @PrimaryGeneratedColumn()
-  id: number
+  id!: number
+
+  @Column({ unique: true })
+  code!: string
+
+  @Column({ unique: true })
+  shortname!: string
 
   @Column()
-  code: string
-
-  @Column()
-  shortname: string
-
-  @Column()
-  lbrq: number
+  lbrq!: number
 }

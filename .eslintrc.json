@@ -4,12 +4,16 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint", 
+    "eslint-plugin-prettier"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "eslint-config-prettier",
+    "prettier/@typescript-eslint"
   ],
   "globals": {
     "Atomics": "readonly",

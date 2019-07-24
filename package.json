@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "ts-node src/index.ts",
     "watch": "tsc --watch",
-    "start:dev": "node --inspect-brk build/dev/index.js",
+    "start:dev": "node build/dev/index.js",
     "start:prod": "node build/dist/index.js",
+    "debug": "node --inspect-brk build/dev/index.js",
     "clean": "rm -rf build",
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
